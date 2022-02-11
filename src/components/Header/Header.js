@@ -25,7 +25,7 @@ const Header = () => {
       const headerElem = document.body.getElementsByTagName("header")[0];
       headerElem.style.setProperty(
         "--background-color",
-        "hsl(241deg 46% 21% / 0.85)"
+        "var(--color-background)"
       );
     } else {
       const headerElem = document.body.getElementsByTagName("header")[0];
@@ -35,7 +35,6 @@ const Header = () => {
 
   return (
     <>
-      {/* <DesktopSpacer size={48} /> */}
       <HeaderWrapper>
         <HeaderRow>
           <Logo>Quang Than</Logo>
@@ -68,7 +67,7 @@ const HeaderWrapper = styled.header`
   z-index: 1;
   --background-color: transparent;
   background: var(--background-color);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 `;
 
 const HeaderRow = styled(MaxWidthWrapper)`
@@ -93,7 +92,7 @@ const NavLinks = styled.ul`
 `;
 
 const NavLinkWrapper = styled.li`
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 
   &:hover a {
     color: var(--color-primary);

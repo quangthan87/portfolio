@@ -1,3 +1,5 @@
+import React from "react";
+import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -9,12 +11,19 @@ import SectionContact from "../components/SectionContact";
 
 export default function Home({ projects }) {
   return (
-    <>
+    <React.Fragment>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Quang Than | Web Developer</title>
+      </Head>
       <SectionHero />
       <SectionAbout />
       <SectionProjects projects={projects} />
       <SectionContact />
-    </>
+    </React.Fragment>
   );
 }
 

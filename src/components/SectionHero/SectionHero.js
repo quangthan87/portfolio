@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
+
+import UnstyledButton from "../UnstyledButton";
 
 import { QUERIES } from "../../constants";
 
@@ -22,6 +25,9 @@ const SectionHero = () => {
               coding has become my passion and my new professional career focus.
             </span>
           </p>
+          <Button>
+            <Link href="/#projects">See my Works</Link>
+          </Button>
         </Left>
         <Right>
           <ImageWrapper>
@@ -71,6 +77,20 @@ const Left = styled.div`
     & p {
       font-size: ${20 / 16}rem;
     }
+  }
+`;
+
+const Button = styled(UnstyledButton)`
+  margin-top: 32px;
+  padding: 1rem 2rem;
+  color: var(--color-primary);
+  background: var(--color-secondary);
+  border-radius: 4px;
+  transition: transform 250ms;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-4px);
   }
 `;
 

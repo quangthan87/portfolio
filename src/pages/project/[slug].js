@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import { serialize } from "next-mdx-remote/serialize";
@@ -22,14 +23,21 @@ const components = {
 
 const ProjectPage = ({ frontMatter, mdxSource }) => {
   return (
-    <>
+    <React.Fragment>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Quang Than | Project - {frontMatter.title}</title>
+      </Head>
       <ProjectHero>
         <LargeTitle tag="h1">{frontMatter.title}</LargeTitle>
       </ProjectHero>
       <Main>
         <MDXRemote {...mdxSource} components={components} />
       </Main>
-    </>
+    </React.Fragment>
   );
 };
 

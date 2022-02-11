@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.16.12",
     "@reach/dialog": "^0.16.2",
     "gray-matter": "^4.0.3",
     "next": "latest",

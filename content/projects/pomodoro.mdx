@@ -11,17 +11,20 @@ photo:
   }
 externalLinks:
   [
-    { iconId: "github", url: "https://github.com" },
-    { iconId: "external-link", url: "" }
+    { iconId: "github", url: "https://github.com/quangthan87/react-pomodoro" },
+    {
+      iconId: "external-link",
+      url: "https://quangthan87.github.io/react-pomodoro/"
+    }
   ]
 ---
 
 <Paragraph>
   Pomodoro App is a mini web application which helps people boost their
   productivity by setting timer for focus and break intervals. This project is
-  inpired by a{" "}
+  inspired by a{" "}
   <ExternalLink href="https://www.frontendmentor.io/challenges/pomodoro-app-KBFnycJ6G">
-    chalenge
+    challenge
   </ExternalLink>{" "}
   created by Frontend Mentor. I implemented the design's core layout and color
   themes, and added some more user settings and also app sound.
@@ -35,6 +38,30 @@ externalLinks:
   layout="responsive"
 />
 
-<MajorHeading>Lessons learned</MajorHeading>
+<br />
 
-<MajorHeading>Tech stack</MajorHeading>
+**Tech:** React, Styled Components
+
+**Code:** <ExternalLink href="https://github.com/quangthan87/react-pomodoro">View Repository</ExternalLink>
+
+**Live:** <ExternalLink href="https://quangthan87.github.io/react-pomodoro/">View Site</ExternalLink>
+
+<MajorHeading>Project Purpose and Goal</MajorHeading>
+
+<Paragraph>
+  The main purpose of this project was to practicing and improving my React and
+  CSS skill. After many tutorials and courses, doing a project from scratch in
+  unguided way is a good practice to solidify what I've learned.
+</Paragraph>
+
+<MajorHeading>Lessons Learned</MajorHeading>
+
+<Paragraph>
+  Even it's a very small app, I learned a lot about hooks and state management
+  in React. During earlier implementation I used useState for every state logic
+  in the root component hence made the codebase quite messy. Then I replaced
+  useState with useReducer when the state logic got more complex and when
+  setting a state depends on the current value of another state. That made the
+  state management more clean and easier to maintain. I also practiced a lot of
+  CSS knowledge when trying to translate the design into code.
+</Paragraph>

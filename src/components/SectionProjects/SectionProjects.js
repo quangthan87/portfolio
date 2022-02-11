@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { MajorHeading } from "../Heading";
+import Paragraph from "../Paragraph";
 
 import { QUERIES } from "../../constants";
 
@@ -14,6 +15,7 @@ const SectionProjects = ({ projects }) => {
   return (
     <Wrapper id="projects">
       <MajorHeading>What I've Built</MajorHeading>
+      <Paragraph>Click on each project to see more details.</Paragraph>
       <ProjectsGrid>
         {sortedProjects.map((project) => (
           <ProjectCard key={project.slug} {...project} />

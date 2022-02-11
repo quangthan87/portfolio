@@ -9,7 +9,7 @@ const Layout = (props) => {
     <React.Fragment>
       <Header />
       <MaxWidthWrapper as="main">{props.children}</MaxWidthWrapper>
-      {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   );
 };
