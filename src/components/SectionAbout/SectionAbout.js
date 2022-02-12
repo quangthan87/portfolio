@@ -19,7 +19,8 @@ const SectionAbout = () => {
         CSS and Javascript. As I dive deeper into web development through docs,
         online tutorials and courses, I've struggled a lot throughout the
         progress but gradually I've felt more comfortable when I can grab the
-        fundamentals.
+        fundamentals. Since then web development has become an important part of
+        my life.
         <br />
         <br />
         With all my determination and the experience I've gathered during my
