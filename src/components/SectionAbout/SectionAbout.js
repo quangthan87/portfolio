@@ -25,14 +25,14 @@ const SectionAbout = () => {
         <br />
         With all my determination and the experience I've gathered during my
         earlier professional career, I'm ambitious to grow as the best web
-        developer I can be, and help create web apps that are functional, look
-        good, accessible and easy-to-use for everyone.
+        developer I can be, and help create web apps that work well, look good,
+        accessible and easy-to-use for everyone.
       </Paragraph>
       <MajorHeading>My Skills</MajorHeading>
       <SkillList>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Javascript</li>
+        <li>JavaScript</li>
         <li>React</li>
         <li>Node.js</li>
         <li>SQL</li>
